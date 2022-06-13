@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+  <div id="title">
+    <h1>Students' KPI</h1>
+  </div>
+
+  <!-- add form start -->
+  <div class="form">
+    <input type="text" class="inps" id="inp-name" placeholder="Enter Name">
+    <input type="text" class="inps" id="inp-surname" placeholder="Enter Surname">
+    <input type="text" class="inps" id="inp-phone" placeholder="Enter Phone Number">
+    <input type="text" class="inps" id="inp-week" placeholder="Enter Weekly KPI">
+    <input type="text" class="inps" id="inp-month" placeholder="Enter Monthly KPI">
+  </div>
+  <button id="btn-submit">Add</button>
+<!-- add form end-->
+
+  <!-- search inp-->
+<div class="search">
+<input type="text" id="inp-search" placeholder="Search"/>
+</div>
+<!-- search inp-->
+</header>
+  <!-- list start-->
+<table id="list"></table>
+<!-- id="example" class="table table-striped" style="width:100%" -->
+<!-- list end-->
+
+<!-- pagination start-->
+<div id="pagination"></div>
+<!-- pagination end-->
+
+<!-- modal edit start-->
+  <div id="modal-edit">
+    <div id="modal-edit-body">
+      <button id="modal-edit-close">Close</button>
+      <div id="modal-edit-inps">
+        <p>Name</p>
+        <input class="inpsInModal" id="inp-edit-name" type="text" />
+        <p>Surname</p>
+        <input class="inpsInModal" id="inp-edit-surname" type="text" />
+        <p>Phone</p>
+        <input class="inpsInModal" type="text" id="inp-edit-phone"/>
+        <p>Weekly KPI</p>
+        <input class="inpsInModal" type="text" id="inp-edit-weeklyKPI"/>
+        <p>Monthly KPI</p>
+        <input class="inpsInModal" type="text" id="inp-edit-monthlyKPI"/>
+        <input type="text" id="inp-edit-id"/>  
+      </div>
+      <button id="btn-save-edit">Save</button>
+    </div>
+  </div>
+</div>
+<!-- modal edit end-->
+  
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.header{
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+h1{
+  color: gold;
+  font-size: 50px;
+}
+#inp-edit-name{
+  width: 20vw;
+  height: 1vh;
+}
+#inp-edit-surname{
+  width: 20vw;
+  height: 1vh;
+}
+#inp-edit-phone{
+  width: 20vw;
+  height: 1vh;
+}
+#inp-edit-weeklyKPI{
+  width: 20vw;
+  height: 1vh;
+}
+#inp-edit-monthlyKPI{
+  width: 20vw;
+  height: 1vh;
+}
+input {
+  width: 50vw;
+
+}
+.inps{
+  height: 4vh;
+  border: none;
+  border-radius: 10px;
+}
+input[type=text] {
+  width: 19%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.btn-delete,
+.btn-edit,
+#btn-submit {
+  background-color: #3308f37c;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+.btn-delete{
+  margin-left: 88%;
+}
+.form {
+margin-top: 3px;
+}
+#inp-search {
+margin-top: 10px;
+padding-left: 45%;
+width: 20vw;
+height: 10vh;
+}
+
+table {
+  color: gold;
+}
+th{
+  /* border: 1px solid indigo; */
+  text-align: center;
+}
+td {
+  width: 100vw;
+  height: 4vh;
+  border: 1px solid ;
+  text-align: center;
+}
+#inp-search{
+  border: indigo ;
+  border-radius: 50px;
+  margin-top: 40px;
+  width: 30vw;
+  height:  5vh;
+}
+#modal-edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.151);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-edit-body {
+  background-color: rgba(112, 11, 112, 0.823);
+  width: 700px;
+  height: 700px;
+  border-radius: 5%;
+  color: lime;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+#modal-edit input[type=text]{
+  height: 4vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 20vw;
+  border-radius: 16px;
+  border: none;
+}
+
+#modal-edit button{
+  background-color: magenta;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+#inp-edit-id {
+  display: none;
+}
+ #list{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+} 
+@media (max-width: 1170px){
+  .btn-delete{
+    margin-left: 85%;
+  }
+}
+@media (max-width: 970px){
+  .btn-delete{
+    margin-left: 82%;
+  }
+  .inps{
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 10px;
+  }
+  .form input{
+    height: 4vh;
+    width: 200px;
+    margin-left: 0%;
+  }
+  .btn-delete{
+    margin: 0 auto;
+  }
+  .btn-edit{
+    margin-left: 0;
+  }
+}
